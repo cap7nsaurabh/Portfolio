@@ -6,6 +6,22 @@ body{
 	top: 40px;
 	text-align: center;
 }
+.cloud-left{
+	position: absolute;
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	left: 10%;
+	top: 100px;
+}
+.cloud-right{
+	position: absolute;
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	right: 10%;
+	top: 100px;
+}
 .nav{
 	position: fixed;
 	z-index: 10;
@@ -35,13 +51,12 @@ body{
 	display: block;
 	height: 100px;
 	width: 100%;
-	z-index: 5;
 	display: none;
 }
 .slideshow{
 	position: relative;
 	margin: auto;
-	width: 40%;
+	width: 45%;
 	height: 400px;
 	display: block;
 
@@ -53,7 +68,7 @@ img{
 .slides{
 	margin-top: 0;
 	margin: auto;
-	width: 100%;
+	width: 93%;
 	height: 400px;
 	display: none;
 }
@@ -64,7 +79,6 @@ img{
 	text-align: center;
 	width: 100%;
 	vertical-align: middle;
-	z-index: 5;
 }
 .dots{
 	margin: auto;
@@ -84,7 +98,7 @@ img{
 .left-button{
 	position: absolute;
 	background-color: rgb(0, 0, 0);
-	left: 0;
+	left: 2%;
 	display: inline-block;
 	width: 15px;
 	height: 20px;;
@@ -94,7 +108,7 @@ img{
 .right-button{
 	position: absolute;
 	background-color: rgb(0, 0, 0);
-	right: 0;
+	right: 2%;
 	display: inline-block;
 	width: 15px;
 	height: 20px;
