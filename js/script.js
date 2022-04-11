@@ -19,13 +19,17 @@ function move(inc){
 function displaySlide(slideIndex){
 	let slideList=document.getElementsByClassName("slides");
 	let dotList=document.getElementsByClassName("dots");
-	currentSlide=slideList[slideIndex];
+	let captionList=document.getElementsByClassName("slide-text");
 	for(let i=0;i<slideTotal;i++){
 		slideList[i].style.display="none";
 		dotList[i].className=dotList[i].className.replace(" active","");
+		captionList[i].style.display="none";
 	}
-	currentSlide.style.display="block"
-	currentDot=dotList[slideIndex];
+	let currentSlide=slideList[slideIndex];
+	currentSlide.style.display="block";
+	let currentCaption=captionList[slideIndex];
+	currentCaption.style.display="block";
+	let currentDot=dotList[slideIndex];
 	currentDot.className="dots active";
 }
 
